@@ -1,7 +1,25 @@
-import Cart from "../../components/Cart";
-import CartHorizontal from "../../components/Cart_Horizontal";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import ListComics from "../../components/ListComics";
+import ListComicsHorizontal from "../../components/ListComicsHorizontal";
+import { fechGetTrendingCom, fechGetUpdateCom } from "../../redux/actions";
 
 export default function Home() {
+  const dispatch = useDispatch();
+
+  const { trendingItem, loadingTrending } = useSelector(
+    (state) => state.trendingComics
+  );
+
+  const { updateItem, loadingUpdate } = useSelector(
+    (state) => state.updateComics
+  );
+
+  useEffect(() => {
+    dispatch(fechGetTrendingCom());
+    dispatch(fechGetUpdateCom());
+  }, [dispatch]);
+
   return (
     <div>
       {/* top trend comic */}
@@ -106,34 +124,17 @@ export default function Home() {
       {/* list manga */}
 
       <div className="mt-6">
-        <div className="container mx-auto px-4">
-          <div>
-            <div className="text-white flex items-center justify-between">
-              <h2 className="text-2xl">Most Viewed</h2>
-              <div className="flex text-sm">
-                <span className="mr-3">Day</span>
-                <span className="mr-3">Week</span>
-                <span className="mr-3">Month</span>
-              </div>
-            </div>
-            <div className="mt-6">
-              <Cart />
-            </div>
-          </div>
+        <div className=" p-4 2xl:container 2xl:mx-auto ">
+          <ListComics
+            title={"Recommend Comics"}
+            listItem={trendingItem}
+            loading={loadingTrending}
+          />
 
-          <div className="mt-10">
-            <div className="text-white flex items-center justify-between">
-              <h2 className="text-2xl">Recently Updated</h2>
-              <div className="flex text-sm">
-                <span className="mr-3">Manga</span>
-                <span className="mr-3">Manhua</span>
-                <span className="mr-3">Month</span>
-              </div>
-            </div>
-            <div className="mt-10">
-              <CartHorizontal />
-            </div>
-          </div>
+          <ListComicsHorizontal
+            title={"Recently Updated"}
+            listItem={updateItem}
+          />
         </div>
       </div>
     </div>

@@ -1,17 +1,17 @@
-export default function Cart() {
+export default function Cart({ item }) {
   return (
-    <div className="w-[200px]">
+    <div>
       <div className="bg-[#1e2c43] rounded-md group cursor-pointer hover:bg-[#283a58]">
         <div className="overflow-hidden">
-          <div className="relative pb-[290px]">
+          <div className="relative pb-[140%]">
             <img
-              className="rounded-md absolute transition-transform duration-300 transform group-hover:scale-110"
-              src="https://static.mangafire.to/i/7/77/4b8bbc4d9998989d7b55aadefcf3902f.jpg"
+              className="rounded-md absolute transition-transform duration-300 transform group-hover:scale-110 h-full w-full"
+              src={item?.thumbnail}
             />
           </div>
         </div>
-        <div className="px-3 py-2 flex items-center justify-center text-white">
-          <span className="text-[14px]">Jujutsu Kaisen</span>
+        <div className="px-3 py-3 flex items-center justify-center text-white ">
+          <span className="text-[14px] line-clamp-1">{item?.title}</span>
         </div>
       </div>
     </div>
