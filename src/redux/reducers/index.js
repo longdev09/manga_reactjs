@@ -1,9 +1,10 @@
 import { combineReducers } from "redux";
-import fechGetTrendingComicsReducer from "./fechGetTrendingComicsReducer";
-import fechGetUpdateComicsReducer from "./fetchGetUpdateComicsReducer";
+import fechHomeReducer from "./fechHomeReducer";
+import fechGetGenresReducer from "./fechGetGenresReducer";
+
 const rootReducers = combineReducers({
-  trendingComics: fechGetTrendingComicsReducer,
-  updateComics: fechGetUpdateComicsReducer,
+  homeComics: fechHomeReducer,
+  genresComics: fechGetGenresReducer,
 });
 
 export default rootReducers;

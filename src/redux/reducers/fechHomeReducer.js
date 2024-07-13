@@ -2,22 +2,25 @@ import * as typeActions from "../typeActions";
 
 const initialState = {
   trendingItem: [],
-  loadingTrending: false,
+  updateItem: [],
+  loading: false,
   error: "",
 };
 
-const fechGetTrendingComicsReducer = (state = initialState, action) => {
+const fechHomeReducer = (state = initialState, action) => {
+  if (action.meta && action.meta.feature !== "home") return state;
   switch (action.type) {
     case typeActions.FECH_PENDING:
       return {
         ...state,
-        loadingTrending: true,
+        loading: true,
       };
     case typeActions.FECH_SUCCESS:
       return {
         ...state,
         trendingItem: action.payload,
-        loadingTrending: false,
+        updateItem: action.itemUpdate,
+        loading: false,
       };
     case typeActions.FECH_FAILLURE:
       return {
@@ -28,4 +31,4 @@ const fechGetTrendingComicsReducer = (state = initialState, action) => {
       return state;
   }
 };
-export default fechGetTrendingComicsReducer;
+export default fechHomeReducer;

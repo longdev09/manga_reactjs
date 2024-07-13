@@ -1,23 +1,24 @@
 import * as typeActions from "../typeActions";
 
 const initialState = {
-  updateItem: [],
-  loadingUpdate: false,
+  genres: [],
+  loadingGenres: false,
   error: "",
 };
 
-const fechGetUpdateComicsReducer = (state = initialState, action) => {
+const fechGetGenresReducer = (state = initialState, action) => {
+  if (action.meta && action.meta.feature !== "genres") return state;
   switch (action.type) {
     case typeActions.FECH_PENDING:
       return {
         ...state,
-        loadingUpdate: true,
+        loadingGenres: true,
       };
     case typeActions.FECH_SUCCESS:
       return {
         ...state,
-        updateItem: action.payload,
-        loadingUpdate: false,
+        genres: action.payload,
+        loadingGenres: false,
       };
     case typeActions.FECH_FAILLURE:
       return {
@@ -28,4 +29,4 @@ const fechGetUpdateComicsReducer = (state = initialState, action) => {
       return state;
   }
 };
-export default fechGetUpdateComicsReducer;
+export default fechGetGenresReducer;

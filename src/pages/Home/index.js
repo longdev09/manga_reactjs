@@ -2,22 +2,17 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import ListComics from "../../components/ListComics";
 import ListComicsHorizontal from "../../components/ListComicsHorizontal";
-import { fechGetTrendingCom, fechGetUpdateCom } from "../../redux/actions";
+import { fechHome } from "../../redux/actions";
 
 export default function Home() {
   const dispatch = useDispatch();
 
-  const { trendingItem, loadingTrending } = useSelector(
-    (state) => state.trendingComics
-  );
-
-  const { updateItem, loadingUpdate } = useSelector(
-    (state) => state.updateComics
+  const { trendingItem, updateItem, loading } = useSelector(
+    (state) => state.homeComics
   );
 
   useEffect(() => {
-    dispatch(fechGetTrendingCom());
-    dispatch(fechGetUpdateCom());
+    dispatch(fechHome());
   }, [dispatch]);
 
   return (
@@ -128,7 +123,7 @@ export default function Home() {
           <ListComics
             title={"Recommend Comics"}
             listItem={trendingItem}
-            loading={loadingTrending}
+            loading={loading}
           />
 
           <ListComicsHorizontal

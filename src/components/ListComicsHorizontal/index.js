@@ -12,7 +12,7 @@ export default function ListComicsHorizontal({ title, subItem, listItem }) {
         </div>
       </div>
       <div className="mt-6 flex flex-wrap overflow-hidden">
-        {listItem.map((item, index) => (
+        {listItem?.map((item, index) => (
           <CartHorizontal key={index} item={item} />
         ))}
       </div>
