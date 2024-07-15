@@ -13,11 +13,14 @@ export const fechHome = () => {
       //  call api
       const res = await instance.get("trending-comics");
       const resUpdate = await instance.get("recent-update-comics");
+      const resTop = await instance.get("top/Monthly");
+
       // neu thanh cong
       dispatch({
         type: typeActions.FECH_SUCCESS,
         payload: res.data.comics,
         itemUpdate: resUpdate.data.comics,
+        topItem: resTop.data.comics,
         meta: { feature: "home" },
       });
     } catch (error) {

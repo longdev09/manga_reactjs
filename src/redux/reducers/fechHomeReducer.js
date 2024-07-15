@@ -3,6 +3,7 @@ import * as typeActions from "../typeActions";
 const initialState = {
   trendingItem: [],
   updateItem: [],
+  topItem: [],
   loading: false,
   error: "",
 };
@@ -20,6 +21,7 @@ const fechHomeReducer = (state = initialState, action) => {
         ...state,
         trendingItem: action.payload,
         updateItem: action.itemUpdate,
+        topItem: action.topItem,
         loading: false,
       };
     case typeActions.FECH_FAILLURE:

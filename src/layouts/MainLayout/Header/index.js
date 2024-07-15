@@ -39,7 +39,7 @@ export default function Header() {
           <div className="block xl:hidden">
             <FaBars
               onClick={handleShowMenu}
-              className=" text-[color:var(--sub-text)] transition duration-300 hover:text-white mr-5 cursor-pointer text-xl relative"
+              className=" select-none text-[color:var(--sub-text)] transition duration-300 hover:text-white mr-5 cursor-pointer text-xl relative"
             />
             <ul
               className={`absolute bg-[#182335] text-[#8f96a0] z-20 py-1 rounded-md transition-all duration-300 ease-in-out transform ${
@@ -47,7 +47,7 @@ export default function Header() {
               } origin-top`}
             >
               {listMenu.map((item, index) => (
-                <li className="block cursor-pointer " key={index}>
+                <li className="block cursor-pointer  select-none" key={index}>
                   {item == "Genres" ? (
                     <>
                       <div
@@ -63,8 +63,10 @@ export default function Header() {
                         }`}
                       >
                         {genres?.map((item, index) => (
-                          <li key={index} className="text-sm">
-                            <Link>{item.name}</Link>
+                          <li key={index} className="text-sm select-none">
+                            <Link className="transition duration-300 hover:text-white">
+                              {item.name}
+                            </Link>
                           </li>
                         ))}
                       </ul>
@@ -90,11 +92,14 @@ export default function Header() {
 
           {/*  search */}
           <div className="flex-1 ml-5">
-            <div className="flex items-center text-white border  border-solid border-[#1e2c43] px-2 h-9 rounded-xl bg-[#182335]">
+            <div className="flex text-[color:var(--sub-text)] items-center justify-end  sm:hidden">
+              <FaMagnifyingGlass className="cursor-pointer text-xl" />
+            </div>
+            <div className="hidden  sm:flex items-center text-[color:var(--sub-text)] border  border-solid border-[#1e2c43] px-2 h-9 rounded-xl bg-[#182335]">
               <FaMagnifyingGlass className="cursor-pointer" />
               <Input
                 placeholder={"Tìm bất cứ truyện gì ..."}
-                className="no-focus bg-[#182335] ml-[15px] text-sm"
+                className="no-focus bg-[#182335] ml-[15px] text-sm "
               />
             </div>
           </div>
