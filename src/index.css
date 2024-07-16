@@ -12,7 +12,8 @@
 
 body{
     font-family: "Poppins", sans-serif;
-    background-image: url(./assets/Bg/body-bg.jpg);
+    /* background-image: url(./assets/Bg/body-bg.jpg); */
+    background-color:var(--color-main)
 
 }
 :root{
@@ -22,4 +23,14 @@ body{
 
     --bg-item: #1e2c43;
 
+    --text-color-hover: #3c8bc6;
 }
+
+
+@layer utilities {
+    .bg-custom-image {
+      background-image: url('./assets/Bg/body-bg.jpg');
+      
+    }
+    
+  }

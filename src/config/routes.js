@@ -1,5 +1,5 @@
 const routes = {
   home: "/",
-  detail_manga: "detail-manga",
+  detail: "detail/comics/:comic_id",
 };
 export default routes;

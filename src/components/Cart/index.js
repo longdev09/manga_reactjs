@@ -1,6 +1,9 @@
+import { Link } from "react-router-dom";
+import config from "../../config";
+
 export default function Cart({ item }) {
   return (
-    <div>
+    <Link to={config.detail.replace(":comic_id", item?.id)}>
       <div className="bg-[#1e2c43] rounded-md group cursor-pointer hover:bg-[#283a58]">
         <div className="overflow-hidden">
           <div className="relative pb-[140%]">
@@ -14,6 +17,6 @@ export default function Cart({ item }) {
           <span className="text-[14px] line-clamp-1">{item?.title}</span>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
