@@ -6,6 +6,7 @@ export default function ListComicsHorizontal({ title, subItem, listItem }) {
       <div className="text-white  flex flex-col sm:flex-row sm:items-center sm:justify-between ">
         <h2 className="text-2xl mb-2 sm:mb-0">{title}</h2>
         <div className="flex text-sm  text-[#838a9c]">
+          {subItem }
           <span className="mr-3">Manga</span>
           <span className="mr-3">Manhua</span>
           <span className="mr-3">Month</span>

@@ -2,8 +2,6 @@ import "swiper/css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { FaEye, FaHeart } from "../../assets/icon";
 export default function TopComics({ item }) {
-  console.log("item", item);
-
   return (
     <div>
       {/* item */}
