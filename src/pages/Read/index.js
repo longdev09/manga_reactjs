@@ -4,12 +4,13 @@ import Logo from "../../components/Logo";
 import { Link } from "react-router-dom";
 import SearchComics from "../../components/SearchComics";
 import Button from "../../components/Button";
+import SideBar from "../../components/Sidebar";
 export default function Read() {
   return (
     <div>
-      <div className="bg-custom-image absolute bottom-0 top-0 left-0 right-0 z-[-1] bg-cover w-full opacity-45"></div>
+      <div className="bg-custom-image absolute bottom-0 top-0 left-0 right-0  z-[-1] bg-cover w-full opacity-45"></div>
 
-      <header className="bg-[#0e1726] border-b-[1px] border-[rgb(30,44,67)]">
+      <header className="bg-[#0e1726] border-b-[1px] border-[rgb(30,44,67)] fixed left-0 right-[22rem]">
         <div className="flex items-center px-4">
           <Logo />
           <ul className=" hidden xl:flex items-center text-sm p-1  text-[#c6cacf] ml-3">
@@ -44,9 +45,10 @@ export default function Read() {
           </div>
         </div>
       </header>
-      <div className="flex">
+
+      <div className="overflow-hidden flex">
         {/* content */}
-        <div>
+        <div className="flex-1 pt-14">
           {/* list truyen */}
           <div className="flex flex-col justify-center overflow-auto scrollbar-custom">
             <div className="flex justify-center mb-3">
@@ -59,7 +61,7 @@ export default function Read() {
         </div>
 
         {/* sider-bar-menu */}
-        <div className="text-white">sdasdasdadasdasdasdasd</div>
+        <SideBar />
       </div>
     </div>
   );

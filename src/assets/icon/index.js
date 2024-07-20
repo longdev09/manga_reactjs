@@ -7,6 +7,7 @@ import {
   faHeart,
   faLanguage,
   faPlay,
+  faHurricane,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -38,4 +39,8 @@ export const FaLanguage = ({ ...props }) => (
 
 export const FaPlay = ({ ...props }) => (
   <FontAwesomeIcon icon={faPlay} {...props} />
+);
+
+export const FaHurricane = ({ ...props }) => (
+  <FontAwesomeIcon icon={faHurricane} {...props} />
 );
