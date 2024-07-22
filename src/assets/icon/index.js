@@ -8,6 +8,10 @@ import {
   faLanguage,
   faPlay,
   faHurricane,
+  faComment,
+  faBookmark,
+  faInfo,
+  faSquare,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -43,4 +47,26 @@ export const FaPlay = ({ ...props }) => (
 
 export const FaHurricane = ({ ...props }) => (
   <FontAwesomeIcon icon={faHurricane} {...props} />
+);
+
+//comment
+
+export const FaComment = ({ ...props }) => (
+  <FontAwesomeIcon icon={faComment} {...props} />
+);
+
+//Bookmark
+export const FaBookmark = ({ ...props }) => (
+  <FontAwesomeIcon icon={faBookmark} {...props} />
+);
+
+// info
+export const FaInfo = ({ ...props }) => (
+  <FontAwesomeIcon icon={faInfo} {...props} />
+);
+
+// an header menu
+
+export const FaSquare = ({ ...props }) => (
+  <FontAwesomeIcon icon={faSquare} {...props} />
 );

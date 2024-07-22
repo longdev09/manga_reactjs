@@ -3,7 +3,7 @@ import { FaEye, FaPlay } from "../../assets/icon";
 export default function ListChapter({ list }) {
   console.log(list);
   return (
-    <ul className="overflow-auto h-[500px] rounded-b-lg scrollbar-custom">
+    <ul className="overflow-auto h-[500px] rounded-b-lg ">
       {list?.map((item, index) => (
         <li className="px-5 py-4 text-[#51565f] text-sm bg-[#141d2c] border-t-[1px]  border-[#182335] group hover:bg-[#162131] hover:text-[var(--text-color-hover)] transition duration-300">
           <Link className="flex items-center justify-between ">

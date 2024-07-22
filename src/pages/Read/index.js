@@ -9,7 +9,6 @@ export default function Read() {
   return (
     <div>
       <div className="bg-custom-image absolute bottom-0 top-0 left-0 right-0  z-[-1] bg-cover w-full opacity-45"></div>
-
       <header className="bg-[#0e1726] border-b-[1px] border-[rgb(30,44,67)] fixed left-0 right-[22rem]">
         <div className="flex items-center px-4">
           <Logo />
@@ -46,19 +45,27 @@ export default function Read() {
         </div>
       </header>
 
-      <div className="overflow-hidden flex">
+      <div className=" flex ">
         {/* content */}
-        <div className="flex-1 pt-14">
-          {/* list truyen */}
-          <div className="flex flex-col justify-center overflow-auto scrollbar-custom">
-            <div className="flex justify-center mb-3">
-              <img src="https://comics-api.vercel.app/images?src=https://dtcdnyacd.com/nettruyen/co-gai-nguoi-y-va-cuoc-song-tu-do/1/1.jpg" />
-            </div>
-            <div className="flex justify-center">
-              <img src="https://comics-api.vercel.app/images?src=https://dtcdnyacd.com/nettruyen/co-gai-nguoi-y-va-cuoc-song-tu-do/1/2.jpg" />
+
+        {/* list truyen */}
+        <div className="flex-1 pt-14 overflow-hidden">
+          <div
+            className="block overflow-auto w-full"
+            style={{ height: "calc(100vh - 3.5rem)" }}
+          >
+            <div className="block">
+              <div className="flex justify-center mb-3">
+                <img src="https://comics-api.vercel.app/images?src=https://dtcdnyacd.com/nettruyen/co-gai-nguoi-y-va-cuoc-song-tu-do/1/1.jpg" />
+              </div>
+              <div className="flex justify-center">
+                <img src="https://comics-api.vercel.app/images?src=https://dtcdnyacd.com/nettruyen/co-gai-nguoi-y-va-cuoc-song-tu-do/1/2.jpg" />
+              </div>
             </div>
           </div>
         </div>
+
+        {/* **************************end**************************** */}
 
         {/* sider-bar-menu */}
         <SideBar />

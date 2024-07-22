@@ -5,9 +5,8 @@ export default function Button({
   icon,
   className,
 }) {
-  const baseClasses = "px-4 py-2 bg-[#3c8bc6] text-white rounded  text-sm";
+  const baseClasses = "px-4 py-3  text-white rounded  text-sm";
   const disabledClasses = "opacity-50 cursor-not-allowed";
-
   return (
     <button
       onClick={onclick}
