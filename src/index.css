@@ -33,24 +33,7 @@ body{
     }
 
 
-    .scrollbar-custom {
-      scrollbar-width: thin;  /* Firefox */
-      scrollbar-color: #888 #333;  /* Firefox */
   
-      &::-webkit-scrollbar {
-          width: 12px;  /* width of the entire scrollbar */
-      }
-  
-      &::-webkit-scrollbar-track {
-          background: #333;  /* color of the tracking area */
-      }
-  
-      &::-webkit-scrollbar-thumb {
-          background-color: #888;  /* color of the scroll thumb */
-          border-radius: 20px;  /* roundness of the scroll thumb */
-          border: 3px solid #333;  /* creates padding around scroll thumb */
-      }
-  }
     
 }
 

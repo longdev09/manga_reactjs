@@ -5,7 +5,8 @@ export default function Button({
   icon,
   className,
 }) {
-  const baseClasses = "px-4 py-3  text-white rounded  text-sm";
+  const baseClasses =
+    "text-white rounded text-sm flex items-center transition duration-200 hover:bg-[#2a3e5d] ";
   const disabledClasses = "opacity-50 cursor-not-allowed";
   return (
     <button

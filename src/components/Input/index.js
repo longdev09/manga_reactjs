@@ -1,6 +1,12 @@
-export default function Input({ value, ...rest }) {
-  const handleChange = (e) => {
-    console.log(e.target.value);
-  };
-  return <input value={value} onChange={handleChange} {...rest} />;
+export default function Input({ value, onChange, ...rest }) {
+  return (
+    <input
+      value={value}
+      onChange={(e) => {
+        const { value } = e.target;
+        onChange(value);
+      }}
+      {...rest}
+    />
+  );
 }

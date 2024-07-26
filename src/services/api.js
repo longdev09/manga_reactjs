@@ -17,3 +17,8 @@ export const getTopComics = (option) => ({
 });
 
 // detail comics
+
+// detail chapter
+export const getSingleChapter = (comic_id, chapter_id) => ({
+  path: `comics/${comic_id}/chapters/${chapter_id}`,
+});

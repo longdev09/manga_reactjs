@@ -12,6 +12,7 @@ const subTextStatus = ["All", "Completed", "Ongoing"];
 export default function Home() {
   // top comics
   const [textTop, setTextTop] = useState(subTextTop[0]);
+  
   const { data: topComics, loading: topLoading } = useFetch(
     api.getTopComics(textTop).path
   );

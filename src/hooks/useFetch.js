@@ -5,7 +5,6 @@ const useFetch = (url) => {
   const [loading, setLoading] = useState(true);
   const [error, serError] = useState(null);
 
-  console.log(url);
   const fetchApi = async () => {
     try {
       setLoading(true);
@@ -21,7 +20,6 @@ const useFetch = (url) => {
   };
   // cho sua
   useEffect(() => {
-    console.log(1);
     fetchApi();
   }, [url]);
   return { data, loading, error };

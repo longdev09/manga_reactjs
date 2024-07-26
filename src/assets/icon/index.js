@@ -12,6 +12,14 @@ import {
   faBookmark,
   faInfo,
   faSquare,
+  faArrowRight,
+  faArrowLeft,
+  faList,
+  faCaretLeft,
+  faCaretRight,
+  faChevronLeft,
+  faArrowDownUpAcrossLine,
+  faUser,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -24,6 +32,10 @@ export const FaBars = ({ ...props }) => (
 
 export const FaChevronRight = ({ ...props }) => (
   <FontAwesomeIcon icon={faChevronRight} {...props} />
+);
+
+export const FaChevronLeft = ({ ...props }) => (
+  <FontAwesomeIcon icon={faChevronLeft} {...props} />
 );
 
 export const FaEye = ({ ...props }) => (
@@ -69,4 +81,36 @@ export const FaInfo = ({ ...props }) => (
 
 export const FaSquare = ({ ...props }) => (
   <FontAwesomeIcon icon={faSquare} {...props} />
+);
+
+// arrow Right
+export const FaArrowRight = ({ ...props }) => (
+  <FontAwesomeIcon icon={faArrowRight} {...props} />
+);
+
+// arrow Left
+export const FaArrowLeft = ({ ...props }) => (
+  <FontAwesomeIcon icon={faArrowLeft} {...props} />
+);
+
+//menu
+export const FaList = ({ ...props }) => (
+  <FontAwesomeIcon icon={faList} {...props} />
+);
+
+// mui ten dam
+export const FaCaretLeft = ({ ...props }) => (
+  <FontAwesomeIcon icon={faCaretLeft} {...props} />
+);
+
+export const FaCaretRight = ({ ...props }) => (
+  <FontAwesomeIcon icon={faCaretRight} {...props} />
+);
+
+export const FaArrowDownUpAcrossLine = ({ ...props }) => (
+  <FontAwesomeIcon icon={faArrowDownUpAcrossLine} {...props} />
+);
+
+export const FaUser = ({ ...props }) => (
+  <FontAwesomeIcon icon={faUser} {...props} />
 );

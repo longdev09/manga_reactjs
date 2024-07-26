@@ -24,7 +24,6 @@ export default function Detail() {
   }, [dispatch]);
 
   const handleShowAllText = () => {
-    console.log(showAllText);
     setShowAllText(!showAllText);
   };
 
@@ -164,7 +163,7 @@ export default function Detail() {
             </div>
 
             {/* list chapter */}
-            <div className="">
+            <div>
               <ListChapter list={detailComics?.chapters} />
             </div>
           </div>
