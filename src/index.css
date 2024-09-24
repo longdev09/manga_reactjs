@@ -11,6 +11,7 @@
 
 
 body{
+ 
     font-family: "Poppins", sans-serif;
     /* background-image: url(./assets/Bg/body-bg.jpg); */
     background-color:var(--color-main)
@@ -31,8 +32,6 @@ body{
       background-image: url('./assets/Bg/body-bg.jpg');
       
     }
-
-
   
     
 }
@@ -88,3 +87,4 @@ body{
   .swiper-scrollbar-drag {
     background:#8bbadd !important;
   }
+

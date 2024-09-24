@@ -12,7 +12,12 @@ import {
 import Button from "../Button";
 import { ChapterNavigation } from "../Button_Helper";
 
-export default function SideBar({ numberChapter, handleChapter, handleH }) {
+export default function SideBar({
+  numberChapter,
+  handleChapter,
+  handleH,
+  handlePanelComment,
+}) {
   //   cac su kien
 
   return (
@@ -70,7 +75,10 @@ export default function SideBar({ numberChapter, handleChapter, handleH }) {
       {/**************** */}
 
       {/* Binh Luan   */}
-      <Button className="bg-[#182334] px-4 py-3  mb-3 flex items-center justify-between">
+      <Button
+        onclick={handlePanelComment}
+        className="bg-[#182334] px-4 py-3  mb-3 flex items-center justify-between"
+      >
         <FaComment />
         <span>Comment</span>
       </Button>

@@ -20,6 +20,10 @@ import {
   faChevronLeft,
   faArrowDownUpAcrossLine,
   faUser,
+  faClockRotateLeft,
+  faBell,
+  faRightFromBracket,
+  faThumbsUp,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -113,4 +117,20 @@ export const FaArrowDownUpAcrossLine = ({ ...props }) => (
 
 export const FaUser = ({ ...props }) => (
   <FontAwesomeIcon icon={faUser} {...props} />
+);
+
+export const FaClockRotateLeft = ({ ...props }) => (
+  <FontAwesomeIcon icon={faClockRotateLeft} {...props} />
+);
+
+export const FaBell = ({ ...props }) => (
+  <FontAwesomeIcon icon={faBell} {...props} />
+);
+
+export const FaRightFromBracket = ({ ...props }) => (
+  <FontAwesomeIcon icon={faRightFromBracket} {...props} />
+);
+
+export const FaThumbsUp = ({ ...props }) => (
+  <FontAwesomeIcon icon={faThumbsUp} {...props} />
 );

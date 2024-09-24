@@ -1,9 +1,27 @@
+import { getAuth, onAuthStateChanged } from "firebase/auth";
+import { Fragment, useEffect } from "react";
+import { useDispatch } from "react-redux";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import MainLayout from "./layouts/MainLayout";
+import { setUser } from "./redux/actions";
 import { publicRoutes } from "./routes";
-
-import { Fragment } from "react";
 function App() {
+  const dispatch = useDispatch();
+  const auth = getAuth();
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      if (user) {
+        dispatch(setUser(user));
+      } else {
+        dispatch(setUser(null));
+      }
+    });
+
+    // Cleanup subscription on unmount
+    return () => unsubscribe();
+  }, [dispatch]);
+
   return (
     <BrowserRouter>
       <Routes>

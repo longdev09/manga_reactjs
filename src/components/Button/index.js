@@ -6,7 +6,7 @@ export default function Button({
   className,
 }) {
   const baseClasses =
-    "text-white rounded text-sm flex items-center transition duration-200 hover:bg-[#2a3e5d] ";
+    "text-white rounded text-sm flex items-center transition duration-200 hover:bg-[#2a3e5d] select-none";
   const disabledClasses = "opacity-50 cursor-not-allowed";
   return (
     <button
