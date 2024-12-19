@@ -1,70 +1,100 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 🔥 Manga 
 
-## Available Scripts
 
-In the project directory, you can run:
+![image](https://github.com/user-attachments/assets/5b48a93e-f930-4fb5-82fd-2192ea9ca04d)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Decription
+Manga is an online comic reading website, offering basic functions such as reading manga, switching chapters, organizing favorite lists, creating personalized collections, and tracking reading history.
+## Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Front-End:** Reactjs, Javascrip, HTML, Tailwind, Redux
 
-### `npm test`
+**Back-end:** Api https://comics-api.vercel.app
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Features
+1.  **User** 
+Account Management:
+  Registration and Login: Implement user registration and login functionality (using JWT or cookies for session management).
+  Social Login Options: Allow users to log in via social media accounts (Google, Facebook).
+Reading Feature:
+  User-Friendly Reading Interface: Enable users to adjust font size and background color (light/dark mode).
+  Save Reading Progress: Automatically save the chapter and position where the user stopped reading.
+Favorites List:
+  Add to Favorites: Allow users to add stories to their favorites list for easy access.
+Reading History:
+  Track Reading History: Display a list of stories that the user has recently read.
+Comments and Ratings:
+  Feedback: Let users leave comments or rate the stories.
+Notifications:
+  Update Alerts: Send notifications to users when their favorite stories release new chapters.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Demo
+- **Update**
 
-### `npm run eject`
+## Authors
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Bạch Long
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Run Locally
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Clone the project
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+  git clone https://github.com/longdev09/manga_reactjs.git
+```
 
-## Learn More
+Go to the project directory
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Frontend 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+  cd zing_music
+```
+Install dependencies
 
-### Code Splitting
+```bash
+  npm install
+```
+Start the server
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+  npm start
+```
 
-### Analyzing the Bundle Size
+Backend 
+```bash
+  cd server_musics
+```
+Install dependencies
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+  npm install
+```
+Start the server
 
-### Making a Progressive Web App
+```bash
+  npm rundev
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Deployment
+update
+    
 
-### Advanced Configuration
+## Screenshots
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+![image](https://github.com/user-attachments/assets/cc27afc9-2bf0-486d-bfce-dec80061781c)
 
-### Deployment
+![image](https://github.com/user-attachments/assets/6e951b6d-5e4d-4224-913c-58fc76cee3e9)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+![image](https://github.com/user-attachments/assets/d29126d7-e8fc-400f-b70a-75eed1642eb0)
 
-### `npm run build` fails to minify
+![image](https://github.com/user-attachments/assets/5c8a0eca-1e8a-4629-b24c-619e563eab62)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
