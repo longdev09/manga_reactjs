@@ -2,7 +2,8 @@
 # 🔥 Manga 
 
 
-![image](https://github.com/user-attachments/assets/5b48a93e-f930-4fb5-82fd-2192ea9ca04d)
+![image](https://github.com/user-attachments/assets/03c9c56e-b4cc-4422-ac42-88a060cc9046)
+
 
 
 ## Decription
@@ -13,24 +14,34 @@ Manga is an online comic reading website, offering basic functions such as readi
 
 **Back-end:** Api https://comics-api.vercel.app
 
-
-
 ## Features
-1.  **User** 
-Account Management:
-  Registration and Login: Implement user registration and login functionality (using JWT or cookies for session management).
-  Social Login Options: Allow users to log in via social media accounts (Google, Facebook).
-Reading Feature:
-  User-Friendly Reading Interface: Enable users to adjust font size and background color (light/dark mode).
-  Save Reading Progress: Automatically save the chapter and position where the user stopped reading.
-Favorites List:
-  Add to Favorites: Allow users to add stories to their favorites list for easy access.
-Reading History:
-  Track Reading History: Display a list of stories that the user has recently read.
-Comments and Ratings:
-  Feedback: Let users leave comments or rate the stories.
-Notifications:
-  Update Alerts: Send notifications to users when their favorite stories release new chapters.
+1.  **User**
+ #### Account Management:
+ <ul>
+   <li> Registration and Login: Implement user registration and login functionality </li>
+   <li> Social Login Options: Allow users to log in via social media accounts (Google).</li>
+ </ul>
+
+ #### Reading Feature:
+  <ul>
+   <li> User-Friendly Reading Interface: Enable users to adjust font size and background color (light/dark mode). </li>
+   <li> Save Reading Progress: Automatically save the chapter and position where the user stopped reading. </li>
+ </ul>
+ 
+ #### Favorites List:
+  <ul>
+   <li> Add to Favorites: Allow users to add stories to their favorites list for easy access. </li>
+ </ul>
+
+ #### Reading History:
+  <ul>
+   <li> Track Reading History: Display a list of stories that the user has recently read. </li>
+ </ul>
+  
+ #### Comments and Ratings:
+   <ul>
+   <li> Feedback: Let users leave comments or rate the stories. </li>
+ </ul>
 
 
 ## Demo
@@ -87,13 +98,17 @@ update
 
 ## Screenshots
 
-![image](https://github.com/user-attachments/assets/cc27afc9-2bf0-486d-bfce-dec80061781c)
+![image](https://github.com/user-attachments/assets/b361fff7-1943-4d41-bc6b-498ba6a4a8eb)
 
-![image](https://github.com/user-attachments/assets/6e951b6d-5e4d-4224-913c-58fc76cee3e9)
+![image](https://github.com/user-attachments/assets/2e9bd4bb-460c-4c9e-8ed1-5e7f972e3834)
 
-![image](https://github.com/user-attachments/assets/d29126d7-e8fc-400f-b70a-75eed1642eb0)
+![image](https://github.com/user-attachments/assets/4384ba73-93f2-45ee-a0a1-812e6d5fbc7a)
 
-![image](https://github.com/user-attachments/assets/5c8a0eca-1e8a-4629-b24c-619e563eab62)
+![image](https://github.com/user-attachments/assets/a2031148-a212-4cbe-8ea7-bf7fef23814a)
+
+
+
+
 
 
 
